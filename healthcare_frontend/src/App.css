@@ -1,0 +1,498 @@
+*{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 11px;
+  overflow-x:hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+.main {
+  background: url(../public/assets/help.jpg);
+  height: 100vh;
+  background-size: cover;
+  font-size: 18px !important;
+}
+.box-area{
+  width: 930px;
+}
+.right-box{
+  padding: 40px 30px 40px 40px ;
+}
+::placeholder{
+  font-size: 16px;
+}
+@media only screen and (max-width:768px){
+  .box-area{
+      margin: 0 10px;
+  }
+  .left-box{
+      height:100px;
+      overflow:hidden;
+  }
+  .right-box{
+      padding: 20px;
+  }
+}
+*::selection{
+  background: var(--main);
+  color:black;
+}
+*{
+  font-family: 'Robotp',sans-serif;
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  outline: none;
+  border:none;
+  transition: .2s all linear;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+:root{
+  background: url(../public/assets/med.jpg);
+  height: 100vh;
+  background-size: cover;
+  --main: #ff5733;
+}
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding:2rem 9%;
+  box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,.6);
+  background: rgb(13, 239, 183);
+  ;
+}
+
+.logo{
+  position:absolute;
+  left:10px;
+  top:10px;
+}
+.logo-text {
+  text-decoration: none;
+}
+
+
+section{
+  padding:2rem 9% ;
+}
+html::-webkit-scrollbar{
+  width: 10px;
+}
+html::-webkit-scrollbar-thumb{
+  background: rgb(6, 231, 219);
+}
+html::-webkit-scrollbar-track{
+  background: black;
+}
+.btn{
+  display: inline-block;
+  box-shadow: 0 0 0.3rem .3rem rgba(0,0,0,.5);
+  margin-top: 1rem;
+  padding: .5rem;
+  padding-left:1rem ;
+  font-size: 1.7rem;
+  color: #1010f5;
+  border-radius: .5rem;
+}
+.btn span{
+  background:var(--main);
+  color: aliceblue;
+  margin-left: 0.5rem;
+  padding:.7rem 1rem;
+  border-radius: .5rem;
+}
+.btn:hover{
+  background-color: black;
+}
+.heading{
+  text-align: center;
+  padding-bottom: 2rem;
+  font-size:5rem;
+  letter-spacing: 0.3rem;
+}
+.about .row{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 200px;
+}
+.about .row .content h3{
+  font-size: 2rem;
+  line-height: 1.8;
+  font-weight: 400;
+}
+.about .row .content p{
+  padding: 1rem 0;
+  color: #333;
+  font-size: 1.5rem;
+  line-height: 1.8;
+}
+.header .logo{
+  font-size:2.5rem;
+  color:black;
+}
+.header .logo i{
+  color: black
+}
+.header .navbar a{
+  color: #333;
+  margin-left: 2rem;
+  font-size: 1.7rem;
+  text-decoration: none;
+}
+.header .navbar a:hover{
+  color:red;
+}
+#menubtn{
+  position: absolute;
+  right:22px;
+  top:25px;
+  font-size: 2.5rem;
+  cursor: pointer;
+  display: none;
+}
+.home{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+  padding-top: 10rem;
+}
+.home .img,.home .content{
+  flex: 1 1 45rem;
+}
+.home .img img{
+  width: 100%;
+}
+.home .content h2{
+  font-size: 4.5rem;
+  line-height: 1.8;
+  text-shadow: .5rem 0 0 0.5rem rgba(0,0,0,.1);
+
+}
+.home .content p{
+  font-size: 1.7rem;
+  color:#333;
+  padding: 1rem 0;
+  line-height: 1.8;
+  
+}
+
+@media (max-width:991px){
+  html{
+      font-size:55%;
+  }
+  .header{
+      padding : 2rem;
+  }
+}
+@media (max-width:768px){
+  #menubtn{
+      display:inline;
+  }
+  .header .navbar{
+      position: absolute;
+      top: 115%;
+      left: 2rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 0 0.5rem 1rem rgba(0,0,0,.7);
+      border:0.2rem solid black;
+      background: white;
+      transform:scale(0);
+      transform-origin: top right;
+      opacity:0;
+      width:30rem;
+  }
+  .header .navbar.active{
+      opacity:1;
+      transform:scale(1);
+      transition: .2s ease;
+  }
+  .header .navbar a{
+      display: block;
+      margin: 2.5rem;
+      font-size:2rem;
+  }
+
+}
+@media (max-width:450px){
+  html{
+      font-size:50%;
+  }
+}
+.IconC {
+  margin-bottom: 200px;
+} 
+.IconC{
+  display: grid;
+  grid-template-columns:4fr 4fr 4fr;
+  gap: 2rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.IconC .icons {
+  box-shadow: 1.5rem 1.5rem 1.5rem rgba(0,0,0,.7);
+  border:.2rem solid rgb(3, 215, 222);
+  border-radius: .5rem;
+  text-align: center;
+  padding:2.5rem;
+}
+.IconC .icons:hover{
+  transform: scale(1.09);
+  cursor: pointer;
+}
+.IconC .icons i{
+  padding-bottom: .7rem;
+  font-size: 4rem;
+}
+.IconC .icons:hover i {
+  transform: scale(1.55);
+}
+.IconC .icons h3{
+  font-size: 4.5rem;
+  padding :.5rem 0;
+}
+.IconC .icons p{
+  font-size: 1.7rem;
+  color:#333;
+}
+.services .boxContainer{
+  display:grid;
+  grid-template-columns:2fr 2fr 2fr 2fr ;
+  gap:2rem;
+}
+.services .boxContainer .box{
+  border-radius:.5rem;
+  box-shadow: .2rem .8rem 1.2rem rgba(0, 0, 0,.7);
+  border:.5rem solid rgb(3, 215, 222);
+  padding: 2.5rem;
+}
+.services .boxContainer .box i{
+  color: black;
+  padding-bottom: .5rem;
+  font-size: 5rem;
+}
+
+.services .boxContainer .box h3{
+  font-size: 2.5rem;
+  padding :1rem 0;
+}
+.services .boxContainer .box p{
+  font-size: 1.4rem;
+  padding: 1rem 0;
+  color: #333;
+}
+.services .boxContainer .box:hover{
+  transform: scale(1.07);
+  cursor: pointer;
+}
+.services .boxContainer .box:hover i{
+  transform: scale(1.55);
+
+}
+.services{
+  background-image: url(../public/assets/med.jpg);
+  height:100vh;
+  background-size: cover;
+}
+.about{
+  background-image: url(../public/assets/med.jpg);
+  height:100vh;
+  background-size: cover;
+}
+.doctors{
+  margin-bottom: 200px;
+}
+.doctors .boxContainer{
+  display:grid;
+  grid-template-columns:2fr 2fr 2fr 2fr ;
+  gap:2rem;
+}
+.doctors .boxContainer .box{
+  border-radius: .5rem ;
+  text-align: center;
+  box-shadow: 1rem 1rem 1.2rem rgba(0, 0, 0,.7);
+  border:.2rem solid rgb(3, 215, 222);
+  padding: 2rem;
+
+
+}
+.doctors .boxContainer .box:hover{
+  transform: scale(1.02);
+}
+.doctors .boxContainer .box:hover img{
+  transform: scale(1.22);
+}
+.doctors .boxContainer .box h3{
+  font-size: 2.5rem;
+  padding :1rem 0;
+
+}
+.doctors .box span{
+  font-size: 1.5rem;
+
+}
+.doctors .boxContainer .box .icons{
+  padding-top: 2rem;
+}
+.doctors .boxContainer .box i{
+  font-size: 2rem;
+  line-height: 4.5rem;
+  height: 5rem;
+  width:5rem;
+  color:black;
+  border:.2rem solid black;
+  border-radius:.5rem;
+  margin: .3rem;
+}
+.doctors .boxContainer .box .icons i:hover{
+  background: rgb(8, 247, 175);
+}
+
+.doctors .boxContainer .box p{
+  font-size: 1.4rem;
+  padding: 1rem 0;
+  color: #333;
+
+}
+
+
+.doctors img{
+  border:.2rem solid black;
+  border-radius:.5rem;
+  height:20rem;
+  margin-top: 1rem;
+  object-fit: cover;
+  margin-bottom: 1rem;
+
+}
+.book{
+  background-image: url(../public/assets/med.jpg);
+  height:100vh;
+  background-size: cover;
+}
+.book{
+  margin-bottom: 200px;
+}
+.book .row form {
+  flex:1 1 45rem;
+  border:.5rem solid black;
+  box-shadow:0.5rem 1rem 1.5rem rgba(0, 0, 0,.7);
+  padding :2rem;
+  text-align: center;
+  border-radius: .5rem;
+
+}
+.book form h3{
+  font-size: 3rem;
+  padding-bottom: 1rem;
+}
+.book form .box{
+  width:100%;
+  margin:.7rem 0;
+  text-transform: none;
+  padding:1 rem;
+  font-size: 1.6rem;
+  border: .2rem solid black;
+}
+.review{
+  margin-left: 200px;
+}
+.review .boxContainer{
+  display:grid;
+  grid-template-columns:2fr 2fr  ;
+  gap:1rem;
+}
+/* .review .boxContainer .box img{
+  height: 25%;
+} */
+.review .boxContainer .box{
+  box-shadow:.5rem 1rem 1.5rem rgba(0, 0, 0,.7);
+  border: .1rem solid rgb(9, 214, 217);
+  border-radius:.5rem;
+  padding:2.5rem;
+  overflow: hidden;
+  text-align: center;
+  z-index: 0;
+  position: relative;
+}
+.review .boxContainer img{
+  height:20rem;
+  width:20rem;
+  border-radius:50%;
+  border: .1rem solid rgb(8, 15, 16);
+}
+.review .boxContainer .box h3{
+  font-size: 2.2rem;
+  padding:.5rem 0;
+}
+.review .boxContainer .box i{
+  font-size: 1.5rem;
+}
+.review .boxContainer .box p{
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+.review .boxContainer .box::before {
+  content:"";
+  position:absolute;
+  left:50%;
+  top:-4rem;
+  transform:translateX(-50%);
+  height:25rem;
+  width:120%;
+  background:rgb(6, 214, 148);
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  z-index: -1;
+}
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+
+}
+
+.box-area{
+  width: 930px;
+}
+.right-box{
+  padding: 40px 30px 40px 40px ;
+}
+::placeholder{
+  font-size: 16px;
+}
+@media only screen and (max-width:768px){
+  .box-area{
+      margin: 0 10px;
+  }
+  .left-box{
+      height:100px;
+      overflow:hidden;
+  }
+  .right-box{
+      padding: 20px;
+  }
+}
+.form-control{
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
